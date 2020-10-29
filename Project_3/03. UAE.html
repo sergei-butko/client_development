@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ОАЕ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="square();checkCookie();checkBold();checkSessionStorage()">
+<div class="main">
+    <header class="header">
+        <div class="block1" id="bl1a" onclick="swap();"><h1>Подорожуй!</h1></div>
+        <div class="block2" id="bl2">Travelling<span id="res1"></span><br>
+            <form id="form1" onsubmit="saveChanges()">
+                <input type="text" value="Travelling" id="1in" oninput="addText()">
+                <input type="submit" value="Зберегти">
+            </form>
+        </div>
+    </header>
+    <div class="sidebar">
+        <h1>~~~ Меню ~~~</h1>
+        <ul class="ul1">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="01.%20Turkey.html">Турція</a></li>
+            <li><a href="02.%20Egypt.html">Єгипет</a></li>
+            <li><a href="03.%20UAE.html">ОАЕ</a></li>
+            <li><a href="04.%20Dominicana.html">Домінікана</a></li>
+        </ul>
+    </div>
+    <div id="title">Dubai, UAE</div>
+    <div id="photo">
+        <img src="img/Dubai.jpg" alt="dubai">
+        <input type="text" id="text">
+        <input type="button" value="Ok" onclick="findMinMax();">
+    </div>
+    <div id="info">
+        <ul id="ul01">
+            <li>Місто виїзду: Київ</li>
+            <li>Тривалість: 6 ночей</li>
+            <li>Харчування: Сніданок</li>
+            <li>Кількість: 1 людина</li>
+        </ul><br>
+        <h2 id="h1">Ціна: 10 245 грн.</h2>
+        <div id="check">
+            <input type="checkbox" id="ch1" onclick="checkBold()"><label for="ch1">Ввімкнути жирність?</label>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="block2">Travelling</div>
+        <div class="block1" id="bl1b" onclick="swap();"><h1>До Зустрічі!</h1></div>
+    </footer>
+    <div id="mail">
+        Введіть ваш e-mail, щоб підписатися на розсилку:<br>
+        <label for="email">E-Mail:
+            <input type="email" value="введіть e-mail сюди" id="email" onfocus="this.value=''">
+        </label>
+        <input type="button" value="Ok">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
