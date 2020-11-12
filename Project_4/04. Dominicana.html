@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домінікана</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <header class="header">
+        <div class="block1"><h1>Подорожуй!</h1></div>
+        <div class="block2" id="bl1">Travelling #1</div>
+    </header>
+    <div class="sidebar" id="bl2">
+        <h1>~~~ Меню ~~~</h1>
+        <ul class="ul1">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="01.%20Turkey.html">Турція</a></li>
+            <li><a href="02.%20Egypt.html">Єгипет</a></li>
+            <li><a href="03.%20UAE.html">ОАЕ</a></li>
+            <li><a href="04.%20Dominicana.html">Домінікана</a></li>
+        </ul>
+    </div>
+    <div id="bl3">Punta Cana, Dominicana</div>
+    <div id="photo">
+        <img src="img/PuntaCana.jpg" alt="puntacana">
+    </div>
+    <div id="bl4">
+        <ul id="ul01">
+            <li>Місто виїзду: Київ</li>
+            <li>Тривалість: 12 ночей</li>
+            <li>Харчування: Все включено</li>
+            <li>Кількість: 1 людина</li>
+        </ul><br>
+        <h2 id="h1">Ціна: 35 450 грн.</h2>
+    </div>
+    <footer class="footer">
+        <div class="block2" id="bl5">Travelling #6</div>
+        <div class="block1"><h1>До Зустрічі!</h1></div>
+    </footer>
+    <div id="underFooter1">
+        <div id="tasks">
+            <input type="button" value="Task 1" onclick="task1()">
+            <input type="button" value="Task 2" onclick="task2()">
+            <input type="button" value="Task 4" onclick="task4()">
+        </div>
+        <div id="mail">
+            Введіть ваш e-mail, щоб підписатися на розсилку:<br>
+            <label for="email">E-Mail:
+                <input type="text" placeholder="введіть e-mail сюди" id="email" onfocus="onFocus()">
+            </label>
+            <input type="button" value="Ok">
+        </div>
+        <div>
+            <form id="form1">
+                <label for="number">Task 5:
+                    <input type="number" id="number" placeholder="Введіть число" min="0">
+                </label>
+                <input type="button" value="Додати" onclick="addNum()">
+                <input type="button" value="Завершити" onclick="task5()">
+            </form>
+            <div id="result"></div><br>
+        </div>
+    </div>
+    <div id="underFooter2">
+        <form id="form2">
+            Task 3:<br>
+            <input type="text" id="login" placeholder="Enter User Login"><br>
+            <input type="text" id="repos" placeholder="Enter Repository Name"><br>
+            <input type="button" value="Search" onclick="task3(login.value, repos.value)">
+        </form>
+        <div id="error"></div>
+        <div id="table">
+            <div class="tb">User Login</div>
+            <div class="tb">User Name</div>
+            <div class="tb">Commit Message</div>
+            <div class="tb" id="userLogin"></div>
+            <div class="tb" id="userName"></div>
+            <div class="tb" id="commitMessage"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
